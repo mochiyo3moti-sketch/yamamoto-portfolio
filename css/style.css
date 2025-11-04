@@ -361,6 +361,55 @@ h2.section-title::after {
 }
 
 /* =====================
+   Contact（CTA風）
+===================== */
+#contact {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(180deg, #e7f7ff, #fff);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 80px 20px;
+  margin-top: 60px;
+}
+
+#contact p {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: rgb(111, 179, 213);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: rgb(91, 159, 193);
+  transform: translateY(-3px);
+}
+
+#contact::after {
+  content: "";
+  position: absolute;
+  top: -30px; /* ← テープの高さに合わせて微調整可 */
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 800px; /* ← Contact全体に合わせて調整 */
+  height: 100px;
+  background: url("../images/tepumore.png") no-repeat center/contain;
+  z-index: 2;
+  pointer-events: none; /* クリック干渉を防ぐ */
+}
+
+/* =====================
    フッター
 ===================== */
 footer {
@@ -388,5 +437,11 @@ footer {
 
   #variationContainer img {
     width: 45%;
+  }
+
+  #contact::after {
+    width: 300px;
+    height: 60px;
+    top: -20px;
   }
 }
