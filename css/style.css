@@ -371,6 +371,7 @@ h2.section-title::after {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   padding: 80px 20px;
   margin-top: 60px;
+  z-index: 1; /* ← テープを上に重ねるために追加 */
 }
 
 #contact p {
@@ -399,14 +400,14 @@ h2.section-title::after {
 #contact::after {
   content: "";
   position: absolute;
-  top: -30px; /* ← テープの高さに合わせて微調整可 */
+  top: -30px;
   left: 50%;
   transform: translateX(-50%) rotate(-2deg);
-  width: 800px; /* ← Contact全体に合わせて調整 */
+  width: 800px;
   height: 100px;
   background: url("../images/tepumore.png") no-repeat center/contain;
   z-index: 2;
-  pointer-events: none; /* クリック干渉を防ぐ */
+  pointer-events: none;
 }
 
 /* =====================
@@ -445,3 +446,4 @@ footer {
     top: -20px;
   }
 }
+
