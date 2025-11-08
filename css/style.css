@@ -128,6 +128,7 @@ h2.section-title::after {
   flex-shrink: 0; /* 小さく潰れないように */
   transform: translateY(3px); /* 微調整（中央寄せ） */
   align-items: flex-end; /* アイコンの縦位置を下寄せに調整 */
+   margin-left: 8px; /* ← 少し詰めたいときに微調整 */
 }
 
 #skill .section-title .section-icon,
@@ -471,6 +472,7 @@ footer {
     top: -20px;
   }
 }
+
 
 
 
