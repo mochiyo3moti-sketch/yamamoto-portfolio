@@ -105,7 +105,7 @@ h2.section-title::after {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 80%;
   height: 4px;
   background: rgb(111, 179, 213);
   border-radius: 2px;
@@ -122,13 +122,13 @@ h2.section-title::after {
 }
 
 #about .section-title .section-icon {
-  width: 50px !important;
+  width: 60px !important;
 }
 
 #skill .section-title .section-icon,
 #works .section-title .section-icon,
 #contact .section-title .section-icon {
-  width: 50px !important;
+     width: 60px !important;
 }
 
 /* =====================
@@ -466,6 +466,7 @@ footer {
     top: -20px;
   }
 }
+
 
 
 
