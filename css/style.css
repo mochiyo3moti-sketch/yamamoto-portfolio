@@ -111,31 +111,24 @@ h2.section-title::after {
   border-radius: 2px;
 }
 
-/* セクションタイトル + アイコン並び */
-.section-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; /* 文字とアイコンの間隔 */
-}
-
-/* アイコン画像のスタイル */
-.section-icon {
-  width: 30px;   /* お好みで調整 */
+/* =====================
+   セクションアイコン修正（優先指定）
+===================== */
+.section-title .section-icon {
+  width: 50px;
   height: auto;
+  object-fit: contain;
   vertical-align: middle;
-  object-fit: contain;      /* ← 切れないように全体を収める */
-  transform: translateY(2px); /* 微調整で中央寄せ */
 }
 
-/* About専用 */
-#about .section-icon {
-  width: 60px;  /* ← タイトルより少し大きいくらい */
-  height: 30px;
-  object-fit: contain;
-  transform: translateY(2px); /* タイトルと中央を合わせる */
-  align-items: flex-end; /* アイコンの縦位置を下寄せに調整 */
-  
+#about .section-title .section-icon {
+  width: 35px !important;
+}
+
+#skill .section-title .section-icon,
+#works .section-title .section-icon,
+#contact .section-title .section-icon {
+  width: 50px !important;
 }
 
 /* =====================
@@ -473,6 +466,7 @@ footer {
     top: -20px;
   }
 }
+
 
 
 
