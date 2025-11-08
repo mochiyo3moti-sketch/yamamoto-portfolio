@@ -123,6 +123,10 @@ h2.section-title::after {
 
 #about .section-title .section-icon {
   width: 35px !important;
+   height: 35px; /* 高さも指定して固定する */
+  object-fit: contain; /* 比率を保って収める */
+  flex-shrink: 0; /* 小さく潰れないように */
+  transform: translateY(3px); /* 微調整（中央寄せ） */
 }
 
 #skill .section-title .section-icon,
@@ -466,6 +470,7 @@ footer {
     top: -20px;
   }
 }
+
 
 
 
