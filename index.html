@@ -109,16 +109,17 @@
     </div>
 
     <div class="work-item">
-      <img src="images/char2.png"
-           alt="ダミー"
+      <img src="images/mochi-01.svg"
+           alt="もちっと一福シリーズ"
            class="work-thumb banner-trigger"
-           data-title="ダミー"
-           data-variations="images/char2.png,images/char2-alt.png">
+           data-title="もちっと一福シリーズ"
+           data-variations="images/mochi-01.svg,images/mochi-03.svg,images/mochi-02.svg">
       <div class="desc" style="display:none;">
-        <p><strong>概要：</strong> SNS向けの動物キャラクターデザイン。</p>
-        <p><strong>コンセプト：</strong> シンプルな線とポップな色使いで親しみやすさを表現。</p>
-        <p><strong>使用ツール：</strong> Photoshop</p>
-        <p><strong>制作時間：</strong> 約4時間</p>
+        <p><strong>概要：</strong> 休憩のお供に“もちもち時間”</p>
+        <p><strong>コンセプト：</strong> 学校で、オフィスでほっと一服つける癒しのお供に。
+          <br>もちフォルムが使う人の心を和らげます。</p>
+        <p><strong>使用ツール：</strong> Illustrator</p>
+        <p><strong>制作時間：</strong> 約3日</p>
       </div>
     </div>
 
@@ -214,8 +215,14 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
-    <div id="variationContainer" class="variation-list"></div>
+
+    <!-- 横スクロールできるギャラリー -->
+    <div id="variationContainer" class="variation-slider">
+      <!-- JSで画像がここに挿入される -->
+    </div>
+
+    <!-- テキスト説明を下にまとめて配置 -->
+    <div id="modalDesc" class="modal-desc"></div>
   </div>
 </div>
 
@@ -313,5 +320,6 @@ window.addEventListener("click", e => {
 </body>
 
 </html>
+
 
 
